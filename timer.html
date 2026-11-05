@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T4T PE Timer</title>
+  <link rel="stylesheet" href="timer.css" />
+</head>
+<body>
+  <main class="timer-shell" aria-label="Tech For Troops PE countdown timer">
+    <div class="accent accent-a"></div>
+    <div class="accent accent-b"></div>
+    <header class="timer-header">
+      <div class="brand">T4T PE TIMER</div>
+      <div id="status" class="status" aria-live="polite">Ready</div>
+    </header>
+
+    <section class="timer-face">
+      <svg class="ring" viewBox="0 0 220 220" role="img" aria-label="Countdown progress ring">
+        <circle class="ring-bg" cx="110" cy="110" r="94"></circle>
+        <circle id="ringProgress" class="ring-progress" cx="110" cy="110" r="94"></circle>
+      </svg>
+      <div id="display" class="display">15:00</div>
+      <div class="label">TIME LEFT</div>
+    </section>
+
+    <section class="presets" aria-label="Preset times">
+      <button type="button" class="preset" data-minutes="15">15</button>
+      <button type="button" class="preset" data-minutes="20">20</button>
+      <button type="button" class="preset" data-minutes="30">30</button>
+      <div class="custom-wrap">
+        <label for="customMinutes">Custom</label>
+        <input id="customMinutes" type="number" min="1" max="180" step="1" value="15" inputmode="numeric" />
+        <button id="setCustom" type="button" class="set-btn">Set</button>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Timer controls">
+      <button id="startPause" type="button" class="primary">Start</button>
+      <button id="reset" type="button">Reset</button>
+      <button id="plusOne" type="button">+1 min</button>
+    </section>
+  </main>
+
+  <script src="timer.js"></script>
+</body>
+</html>
