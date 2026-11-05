@@ -8,8 +8,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="T4T PE Timer"/>
   <Description DefaultValue="Reusable adjustable countdown timer for Tech For Troops practical exercises."/>
-  <IconUrl DefaultValue="https://YOUR-HOST.example/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://YOUR-HOST.example/icon-64.png"/>
+  <IconUrl DefaultValue="https://mweyrick81.github.io/T4T-PE-Timer/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://mweyrick81.github.io/T4T-PE-Timer/icon-64.png"/>
   <SupportUrl DefaultValue="https://techfortroops.org/"/>
   <Hosts>
     <Host Name="Presentation"/>
@@ -20,7 +20,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://YOUR-HOST.example/timer.html"/>
+    <SourceLocation DefaultValue="https://mweyrick81.github.io/T4T-PE-Timer/"/>
     <RequestedWidth>420</RequestedWidth>
     <RequestedHeight>320</RequestedHeight>
   </DefaultSettings>
