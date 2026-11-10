@@ -113,5 +113,7 @@
   customMinutes.addEventListener('keydown', (e) => { if (e.key === 'Enter') setMinutes(customMinutes.value); });
   document.querySelectorAll('.preset').forEach(btn => btn.addEventListener('click', () => setMinutes(btn.dataset.minutes)));
 
-  setMinutes(15);
+  const params = new URLSearchParams(window.location.search);
+  const presetFromUrl = params.get('minutes');
+  setMinutes(presetFromUrl || 15);
 })();
